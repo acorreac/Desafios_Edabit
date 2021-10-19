@@ -23,17 +23,11 @@ void main() {
     int maximo2 = arr2.reduce(max);
 
     //Condicional if. Verifica se a variável minimo1 é maior que minimo2 e maximo1 é menor que maximo2.
-    if (minimo1 > minimo2 && maximo1 < maximo2) {
-      //Se condicional if for verdadeiro retorna True.
-      return true;
-      //Condicional else. Se condicional if não for True faça o condicional if contrário.
-    } else
-      //Retorna False se condicional if não for True.
-      return false;
+    return (minimo1 > minimo2 && maximo1 < maximo2);
   }
 
   print('Lista1 pode ser aninhado dentro de Lista2?');
 
   //Recebe dois arrays de inteiros como parâmetros da função e exibe na saída do console o retorno da mesma função.
-  print(canNest([1, 2, 3, 4], [2, 3]));
+  print(canNest([1, 2, 3, 4], [5, 6]));
 }
